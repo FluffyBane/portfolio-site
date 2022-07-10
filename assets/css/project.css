@@ -1,0 +1,179 @@
+:root {
+  --color-background: #313552;
+  --color-text-dark: #eee6Ce;
+  --color-primary: #168d67;
+  --color-secondary: #b8405e;
+  --color-white: #dadada;
+  --title-font-family: "Montserrat", serif;
+  --font-family: "Rubik", sans-serif;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+section h1, section h2, section h3 {
+  margin: 15px 0;
+  color: var(--color-secondary);
+}
+
+section p {
+  line-height: 21px;
+  color: var(--color-text-dark);
+}
+
+section p strong {
+  font-weight: 500;
+}
+
+main {
+  display: block;
+  background: var(--color-background);
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 50px;
+  background: var(--color-background);
+  color: var(--color-text-dark);
+}
+
+nav h2 {
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  line-height: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+  color: var(--color-text-dark);
+}
+
+nav a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 2px solid var(--color-background);
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+footer {
+  text-align: center;
+  padding: 50px 50px;
+  background: var(--color-background);
+  color: var(--color-white);
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+footer p a {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    width: 80%;
+  }
+  #contact input, #contact textarea {
+    width: 100%;
+  }
+  #about p, #skills p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about p, #skills p {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  section {
+    width: 70%;
+  }
+}
+
+section h1, section h2, section h3 {
+  text-align: center;
+}
+
+section p {
+  margin: 5px auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  section p {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=project.css.map */
