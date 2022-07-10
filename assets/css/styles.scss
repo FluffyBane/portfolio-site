@@ -1,9 +1,9 @@
 :root {
   --color-background: #313552;
-  --color-text-dark: #EEE6CE;
-  --color-primary: #2EB086;
-  --color-secondary: #B8405E;
-  --color-white: #fff;
+  --color-text-dark: #eee6Ce;
+  --color-primary: #168d67;
+  --color-secondary: #b8405e;
+  --color-white: #dadada;
 
   --title-font-family: "Montserrat", serif;
   --font-family: "Rubik", sans-serif;
@@ -39,23 +39,28 @@ body {
 
 section {
   width: 90%;
-  margin: 4rem auto;
-
-  h1 {
-    color: var(--color-background);
-  }
+  margin: 0 auto;
+  padding: 4rem 0;
 
   h1, h2, h3 {
     margin: 15px 0;
+    color: var(--color-secondary);
   }
 
   p {
-    line-height: 16px;
+    line-height: 21px;
+    color: var(--color-text-dark);
+
+    strong {
+      //color: var(--color-white);
+      font-weight: 500;
+    }
   }
 }
 
 main {
-  display: block;  
+  display: block;
+  background: var(--color-background);  
 }
 
 nav {
@@ -87,6 +92,7 @@ nav {
     li {
       display: inline;
       margin-right: 15px;
+      color: var(--color-text-dark);
     }
   }
 
@@ -104,7 +110,7 @@ nav {
   text-align: center;
   margin-bottom: 30px;
   padding: 80px 40px;
-  background: #B8405E;
+  background: var(--color-primary);
 
   h1 {
     font-family: var(--title-font-family);
@@ -121,7 +127,7 @@ nav {
     display: flex; justify-content: space-between; align-items: center;
 
     a {
-      float: right; font-size: 16px; font-weight: 500; color: #234982
+      float: right; font-size: 16px; font-weight: 500; color: var(--color-text-dark);
     }
   }
 
@@ -140,13 +146,14 @@ nav {
       margin: 0 auto;
       max-width: 100%;
   
-      border: 1px solid #efefef;
+      border: 1px solid #25273c;
       border-radius: 4px;
     }
   
     h2 {
       font-size: 18px;
       margin: 20px 0 15px 0;
+      color: var(--color-white);
     }
   }
 }
@@ -176,10 +183,10 @@ nav {
 #contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   h1 {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   input, textarea {
@@ -188,25 +195,37 @@ nav {
 
     font-size: 14px;
     padding: 8px;
-    margin-bottom: 15px;
+    margin: 7.5px auto;
 
     display: block;
-    min-width: 550px;
-    max-width: 100%;
+    width: 50%;
+    padding: 12px;
 
     font-family: var(--font-family);
     font-weight: 500;
+
+    resize: vertical;
+  }
+
+  textarea {
+    height: 100px;
+    min-height: 100px;
   }
 
   button {
-    padding: 8px 14px;
+    padding: 12px 14px;
     background: var(--color-primary);
     color: var(--color-white);
     border: none;
     border-radius: 4px;
 
+    margin: 10px auto;
+    display: block;
+    width: 120px;
+
     text-align: center;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
   }
 }
@@ -244,6 +263,20 @@ footer {
   #contact {
     input, textarea {
       width: 100%;
+    }
+  }
+
+  #about, #skills {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about, #skills {
+    p {
+      width: 75%;
     }
   }
 }
