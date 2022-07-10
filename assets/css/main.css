@@ -12,7 +12,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -27,6 +28,7 @@ a {
   text-decoration: none;
   color: var(--color-white);
 }
+
 a:hover {
   color: var(--color-primary);
 }
@@ -40,14 +42,17 @@ section {
   margin: 0 auto;
   padding: 4rem 0;
 }
+
 section h1, section h2, section h3 {
   margin: 15px 0;
   color: var(--color-secondary);
 }
+
 section p {
   line-height: 21px;
   color: var(--color-text-dark);
 }
+
 section p strong {
   font-weight: 500;
 }
@@ -62,34 +67,46 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px 50px;
   background: var(--color-background);
   color: var(--color-text-dark);
 }
+
 nav h2 {
   font-family: var(--title-font-family);
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
 }
+
 nav ul {
   display: inline-block;
   list-style: none;
   margin: 0;
   line-height: 30px;
 }
+
 nav ul li {
   display: inline;
   margin-right: 15px;
   color: var(--color-text-dark);
 }
+
 nav a {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 2px solid var(--color-background);
 }
+
 nav a:hover {
   border-bottom: 2px solid var(--color-primary);
 }
@@ -100,6 +117,7 @@ nav a:hover {
   padding: 80px 40px;
   background: var(--color-primary);
 }
+
 #bio h1 {
   font-family: var(--title-font-family);
   color: var(--color-white);
@@ -110,25 +128,42 @@ nav a:hover {
 }
 
 #highlights h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #highlights h1 a {
   float: right;
   font-size: 16px;
   font-weight: 500;
   color: var(--color-text-dark);
 }
+
 #highlights .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #highlights .project-list article {
   padding: 25px 10px;
-  flex: 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
 }
+
 #highlights .project-list img {
   display: block;
   margin: 0 auto;
@@ -136,6 +171,7 @@ nav a:hover {
   border: 1px solid #25273c;
   border-radius: 4px;
 }
+
 #highlights .project-list h2 {
   font-size: 18px;
   margin: 20px 0 15px 0;
@@ -143,33 +179,56 @@ nav a:hover {
 }
 
 #about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #about p {
   margin-bottom: 10px;
   width: 50%;
 }
 
 #skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #skills p {
   margin-bottom: 10px;
   width: 50%;
 }
 
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 #contact h1 {
   margin-bottom: 20px;
   text-align: center;
 }
+
 #contact input, #contact textarea {
   border: 1px solid #a1a1a1;
   border-radius: 4px;
@@ -183,10 +242,12 @@ nav a:hover {
   font-weight: 500;
   resize: vertical;
 }
+
 #contact textarea {
   height: 100px;
   min-height: 100px;
 }
+
 #contact button {
   padding: 12px 14px;
   background: var(--color-primary);
@@ -208,14 +269,17 @@ footer {
   background: var(--color-background);
   color: var(--color-white);
 }
+
 footer ul {
   list-style: none;
   margin-bottom: 40px;
 }
+
 footer ul li {
   display: inline;
   margin: 0 5px;
 }
+
 footer p a {
   color: #fff;
 }
@@ -224,22 +288,23 @@ footer p a {
   section {
     width: 80%;
   }
-
   #contact input, #contact textarea {
     width: 100%;
   }
-
   #about p, #skills p {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 1200px) {
   #about p, #skills p {
     width: 75%;
   }
 }
+
 @media screen and (min-width: 901px) {
   section {
     width: 70%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=main.css.map */
