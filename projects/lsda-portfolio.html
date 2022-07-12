@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link href="/assets/css/project.css" rel="stylesheet" />
+
+    <title>Stephen Bain | Web Developer</title>
+  </head>
+
+  <body>
+    <nav aria-label="Primary">
+      <h2>Stephen Bain</h2>
+      <ul class="navigation">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="intro">
+        <h1>LSD Associates - Architecture Portfolio</h1>
+        <div class="image-gallery">
+          <figure>
+            <img src="/assets/images/disa-website-main.png" />
+            <img src="/assets/images/canary-store-main.jpg" />
+            <img src="/assets/images/lsd-portfolio-main.png" />
+            <img src="/assets/images/disa-website-main.png" />
+          </figure>
+        </div>
+        <div class="tags">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </section>
+      <section id="description">
+        <h2>About</h2>
+        <h3>Company &amp; Requirements</h3>
+        <p>
+          LSD Associates are a full-service design organization. They were looking for a portfolio website to present
+          their architecture and interior design projects in a sleek, modern style. When I took on this project it had
+          already been decided that the website would use <strong>WordPress</strong> and a custom theme designed for portfolios
+          called <strong>Aalto</strong>.
+        </p>
+        <p>Their requirements for the website were:</p>
+        <p>
+          - a comprehensive portfolio of their design projects broken up into categories with dedicated pages for each
+          portfolio item - a custom jumbotron with the project&rsquo;s featured image and title on each page - an easy
+          to edit template for the project pages - drag and drop content switching (no programming needed)
+        </p>
+
+        <h3>Solution &amp; Technologies Used</h3>
+        <p>
+          The extensive WordPress plugin library came in handy when looking for solutions to the project requirements.
+          The <strong>WPBakery Page Builder</strong> was the tool of choice for content creation and it was very easy to create
+          custom page layouts quickly. A plugin to control access to some private projects was required so I selected
+          <strong>Profile Builder</strong> which allows you to create rules for each login type that WordPress defines. Within the
+          project pages there was then an option to mark the page as only visible when the viewer was logged in.
+        </p>
+        <p>
+          The project page header (featured image and title) was created for each using <strong>Slider Revolution.</strong> This
+          plugin allows the creation and editing of custom sliders/image carousels which are turned into WordPress
+          shortcodes for easy inclusion in any page of the site. The custom template for project pages was created with
+          WPBakery and some dummy content left to indicate where to drop images, meta data and assign a category to the
+          project.
+        </p>
+
+        <h3>Challenges</h3>
+        <p>
+          Part of the challenge involved in creating the template was automatically displaying some project meta data
+          (team, status and category). This required another custom shortcode created using <strong>PHP</strong> to extract the
+          information from the &ldquo;page meta&rdquo; attribute and create a custom <strong>HTML</strong> output for the data within
+          the project page.
+        </p>
+        <p>
+          Performance was the biggest hurdle in getting the website up and running. With so many high quality images on
+          display on every page it was crucial that they be optimized and loaded asynchronously so as to obtain the
+          desired loading time. <strong>WP Rocket</strong> helped to lazy-load any image that did not appear &ldquo;above the
+          fold&rdquo; as well as minifying the HTML, CSS and JavaScript files of the site. Then I used <strong>EWWW Image
+          Optimizer</strong> to convert all of the images uploaded to the site into highly compressed WEBP format.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <ul id="social-icons">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Dribbble</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Github</a></li>
+      </ul>
+      <p>Handcrafted by me © 2022</p>
+      <p><a href="mailto:stevo612@gmail.com">stevo612@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
