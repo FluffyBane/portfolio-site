@@ -166,9 +166,29 @@ section h1, section h2, section h3 {
   text-align: center;
 }
 
-section p {
+section h3 {
+  margin-top: 32px;
+}
+
+section p, section ul {
   margin: 8px auto;
   width: 50%;
+}
+
+section ul {
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 21px;
+  color: var(--color-text-dark);
+  padding-left: 10px;
+}
+
+section ul li {
+  margin-bottom: 5px;
+}
+
+section strong {
+  font-weight: 500;
 }
 
 .image-gallery {
@@ -256,13 +276,13 @@ section p {
 }
 
 @media screen and (max-width: 1200px) {
-  section p {
+  section p, section ul {
     width: 85%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  section p {
+  section p, section ul {
     width: 100%;
   }
 }

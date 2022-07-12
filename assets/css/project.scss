@@ -7,9 +7,29 @@ section {
     text-align: center;
   }
 
-  p {
+  h3 {
+    margin-top: 32px;
+  }
+
+  p, ul {
     margin: 8px auto;
     width: 50%;
+  }
+
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 21px;
+    color: var(--color-text-dark);
+    padding-left: 10px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  strong {
+    font-weight: 500;
   }
 }
 
@@ -78,7 +98,7 @@ section {
 
 @media screen and (max-width: 1200px) {
   section {
-    p {
+    p, ul {
       width: 85%;
     }
   }
@@ -86,7 +106,7 @@ section {
 
 @media screen and (max-width: 900px) {
   section {
-    p {
+    p, ul {
       width: 100%;
     }
   }
