@@ -193,6 +193,8 @@ section strong {
 
 .image-gallery {
   overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .image-gallery figure {
@@ -283,6 +285,9 @@ section strong {
 
 @media screen and (max-width: 900px) {
   section p, section ul {
+    width: 100%;
+  }
+  .image-gallery {
     width: 100%;
   }
 }

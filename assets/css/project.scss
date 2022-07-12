@@ -35,6 +35,8 @@ section {
 
 .image-gallery {
   overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
 
   figure {
     position: relative;
@@ -109,5 +111,9 @@ section {
     p, ul {
       width: 100%;
     }
+  }
+
+  .image-gallery {
+    width: 100%;
   }
 }
