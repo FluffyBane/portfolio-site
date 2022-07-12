@@ -177,10 +177,10 @@ section p, section ul {
 
 section ul {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 2em;
   line-height: 21px;
   color: var(--color-text-dark);
-  padding-left: 10px;
 }
 
 section ul li {
