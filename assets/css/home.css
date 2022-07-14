@@ -217,6 +217,13 @@ footer p a {
           flex: 0 50%;
 }
 
+#highlights .project-list article h2, #highlights .project-list article p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+}
+
 #highlights .project-list img {
   display: block;
   margin: 0 auto;

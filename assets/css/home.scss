@@ -36,6 +36,13 @@
     article {
       padding: 32px 8px;
       flex: 0 50%;
+
+      h2, p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 75%;
+      }
     }
   
     img {
